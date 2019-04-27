@@ -87,6 +87,8 @@ var config = {
   $(document).on('click', '.delete-train', function(){
     database.ref($(this).data('key')).remove();
     $(this).parent().remove();
+    $(this).child().remove();
+
 
   });
 });
